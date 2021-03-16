@@ -2,7 +2,7 @@
 
 ## Usage
 
-Simply include the Highlight.js library in your webpage or Node app, then load this module.
+Simply include the Highlight.js library in your webpage.
 
 ### Static website or simple usage
 
