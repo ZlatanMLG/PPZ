@@ -1,5 +1,5 @@
 # plantuml - a language grammar for highlight.js
-![version](https://badgen.net/npm/v/plantuml.js)
+https://badgen.net/badge/version/0.1.1/green
 ## Usage
 
 Simply include the Highlight.js library in your webpage.
