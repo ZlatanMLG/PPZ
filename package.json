@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZlatanMLG/plantuml.js.git"
+    "url": "https://github.com/ZlatanMLG/highlightjs-plantuml.git"
   },
   "keywords": [
     "plantuml",
@@ -18,5 +18,5 @@
   ],
   "author": "Valentyn Zhelepa <neokek1@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/ZlatanMLG/plantuml.js"
+  "homepage": "https://github.com/ZlatanMLG/highlightjs-plantuml"
 }
