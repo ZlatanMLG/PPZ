@@ -1,1 +1,22 @@
-///
+{
+  "name": "plantuml.js",
+  "version": "0.1.1",
+  "description": "highlight.js syntax definition for plantuml format",
+  "main": "src/plantuml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZlatanMLG/plantuml.js.git"
+  },
+  "keywords": [
+    "plantuml",
+    "highlight.js",
+    "highlightjs",
+    "syntax"
+  ],
+  "author": "Valentyn Zhelepa <neokek1@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/ZlatanMLG/plantuml.js"
+}
