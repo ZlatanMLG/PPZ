@@ -17,7 +17,7 @@ Simply load the module after loading Highlight.js.  You'll use the minified vers
 ```
 ## License
 
-Highlight.js is released under the MIT License. See [LICENSE][1] file
+Highlight.js is released under the MIT License. See [LICENSE](https://github.com/ZlatanMLG/highlightjs-plantuml/blob/main/LICENSE) file
 for details.
 
 ### Author
