@@ -20,6 +20,7 @@ Simply load the module after loading Highlight.js.  You'll use the minified vers
 
 ## Example
 Here you can see how highlightjs-plantuml works:
+
 ![image of example](example.png)
 
 ## License
