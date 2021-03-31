@@ -1,4 +1,4 @@
-![logo](logo.png)(man.png)(man.png)(man.png)
+![logo](logo.png)![logo](man.png)![logo](man.png)![logo](man.png)
 
 # plantuml - a language grammar for highlight.js
 ![version](https://badgen.net/badge/version/0.1.1/green)
