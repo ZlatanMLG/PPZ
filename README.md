@@ -1,3 +1,5 @@
+![logo](logo.png)
+
 # plantuml - a language grammar for highlight.js
 ![version](https://badgen.net/badge/version/0.1.1/green)
 ## Usage
