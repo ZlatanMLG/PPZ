@@ -17,6 +17,11 @@ Simply load the module after loading Highlight.js.  You'll use the minified vers
   hljs.highlightAll();
 </script>
 ```
+
+## Example
+Here you can see how highlightjs-plantuml works:
+![image of example](example.png)
+
 ## License
 
 Highlight.js is released under the MIT License. See [LICENSE](https://github.com/ZlatanMLG/highlightjs-plantuml/blob/main/LICENSE) file
