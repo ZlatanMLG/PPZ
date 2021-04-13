@@ -2,7 +2,7 @@
 
 # Javascript code syntax highlighter plugins
 
-##Ketwords
+##Keywords
 
 	- DOM
 
