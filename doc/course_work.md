@@ -244,12 +244,12 @@ initHighlightingOnLoad()
 <a name="розробка"></a>
 ## Розробка
 
-![](http://www.plantuml.com/plantuml/png/ZP1D2i8m48NtEKN8KbgmMrSLwa8GALeF4DeeqVoKP8hqzfB1gG5Tk4dUbvTvmqmTGGQOh67AWOQPjy7VLG_iVVCDtpSP7ALL6JOgza6FeBrZbD39-63fm5fIgP1qNhKyoS5efvQKIrI1fGDJIAKKqkSfk0ntfPNQ41tyJJk2LiRuz64WFddpQRGDeA-o1qO26nBHp3btyqZylGJQZQYAIl2ov69Th0GkPV7m2Rqg2HmrVVZ7G47DSI3y_CkibHicQru0)
+<!-- ![](http://www.plantuml.com/plantuml/png/ZP1D2i8m48NtEKN8KbgmMrSLwa8GALeF4DeeqVoKP8hqzfB1gG5Tk4dUbvTvmqmTGGQOh67AWOQPjy7VLG_iVVCDtpSP7ALL6JOgza6FeBrZbD39-63fm5fIgP1qNhKyoS5efvQKIrI1fGDJIAKKqkSfk0ntfPNQ41tyJJk2LiRuz64WFddpQRGDeA-o1qO26nBHp3btyqZylGJQZQYAIl2ov69Th0GkPV7m2Rqg2HmrVVZ7G47DSI3y_CkibHicQru0)
 
 
 
 ![](http://www.plantuml.com/plantuml/png/XP91IyGm48Nl-HMX9vKjsBk75TQ38BBe-WE6PfHeCYt91Db_hsDi4xjblRtvNfZtscGR6G8dxnGIMpxgVHZUiMUL8lOGKL_SxourH3rQKzWZUCoK2jnXx8CTsGwKFQD-b-cRjfK5VsUgHpazLJX0_3Z9vzLyFfFFfl80ZRE4sN1A8YHMrbO3LRhcRkxs4Z6ST4khtH8L-9m2pJmMVjTwi2vZN_33y6OfKrVe7cBy78B9nbYCfy5XXa59GIajfQg1AXqhxIljAZrMEgZvysy3srTOUHwm-WlWpFM0ATxXE6A6hAO8oPQr2q2BUUcpKlExQhfDr-XlsbnlhfhyhYOl8_4w4J_tAWV-Dx8elq9EoE5LSujaadTV)
-
+ -->
 <a name="тести"></a>
 ## Тестування
 
