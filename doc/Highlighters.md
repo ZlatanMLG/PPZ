@@ -1,4 +1,4 @@
-![logo](jsimage.png)
+![logo](images/jsimage.png)
 
 # Javascript code syntax highlighter plugins
 
@@ -24,7 +24,7 @@ To use SHJS, you need at least 3 files:
 
 This plugin is of the old school, therefore you need to load a .js file with the language definition that you want to highlight. However, you can wrap them all in just one file.
 
-![alt text](shjsimage.png)
+![alt text](images/shjsimage.png)
 
 ## SyntaxHighlighter
 
@@ -63,7 +63,7 @@ In your markup the data-language attribute is used to specify what language to u
 <pre><code data-language="javascript">var testing = true;</code></pre>
 ```
 
-![alt text](rainbowimage.png)
+![alt text](images/rainbowimage.png)
 
 Use the Rainbow.color method to highlight the code :
 
@@ -101,7 +101,7 @@ The required markup should look like :
 <pre><code class="html">Sample 2021 code for the bois</code></pre>
 ```
 
-![alt text](highlightjsimage.png)
+![alt text](images/highlightjsimage.png)
 
 ## Prism.js
 
