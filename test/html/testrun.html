@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/monokai-sublime.min.css">
+	<title>Test</title>
+</head>
+<body>
+
+	<pre>
+		<code class="plantuml">
+			@startuml
+			title Simple communication\nexample
+			hujiyama sjdajyh SLKDks sd
+			skinparam monochrome true
+			/'user is not an actor'/
+			actor User
+			participant "First Class" as A
+			participant "Second Class" as B
+			participant "Last Class" as C
+			A = 123
+			User -> A: DoWork
+			activate A
+			AliceBlue
+			A -> B: Create Request
+			activate B
+
+			B -> C: DoWork
+			activate C
+			C --> B: WorkDone
+			destroy C
+
+			B --> A: Request Created
+			deactivate B
+
+			A --> User: Done
+			deactivate A
+			@lmao
+			@enduml
+		</code>
+	</pre>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+	<script type="text/javascript" src="C:\Users\neoke\OneDrive\Рабочий стол\plantuml\ffff.min.js"></script>
+	<script type="text/javascript">hljs.highlightAll();</script>
+
+
+</body>
+</html>
