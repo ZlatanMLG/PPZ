@@ -32,6 +32,7 @@
 - Дослідження, опубліковане на конференції PPIG, оцінило вплив виділення синтаксису на розуміння коротких програм, виявивши, що наявність підсвічування синтаксису значно скорочує час, необхідний програмісту для узагальнення семантики програми. Окрім того, дані, зібрані під час дослідження, що відстежували очі, свідчать про те, що підсвічування синтаксису дозволяє програмістам приділяти менше уваги стандартним синтаксичним компонентам, таким як ключові слова.
 
 **Реалізація**
+
 Для реалізації проекту використовувались наступні технології та фреймворки:  PlantUML, Node.js(npm), highlighter.js, HTML, Mocha test. 
 
 <a name="завдання"></a>
@@ -46,7 +47,7 @@
 
 <a name="теорія"></a>
 ## Основні положення
-### Поняття підвічування синтаксису, приклади хайлайтерів та їх використання
+### Поняття підcвічування синтаксису, приклади хайлайтерів та їх використання
 
 **Підсвічування синтаксису** - це особливість текстових редакторів, які використовуються для програмування, сценаріїв або мов розмітки, таких як HTML. Функція відображає текст, особливо вихідний код, різними кольорами та шрифтами відповідно до категорії термінів.
 
@@ -190,70 +191,213 @@ initHighlightingOnLoad()
 | Результат: | Користувач отримує певну підсвітку синтаксису |
 | Основний сценарій: |  1. Користувач вписав текст усередині /' '/.<br>2. Система ідентифікує даний текст окремим класом.<br>3. Система підсвічує даний текст певним кольором.<br>4. Користувач отримує певну підсвітку синтаксису.|
 
+**Сценарій підсвітки границь коду**
 
-<!-- ### Діаграми послідовностей
+| Ідентифікатор: | SYMBOL |
+| --- | --- |
+| Назва: | Підсвітка границь коду. |
+| Участники: | Користувач; Система |
+| Передумови: | Користувач використав '@startuml' або ж '@enduml' |
+| Результат: | Користувач отримує певну підсвітку синтаксису |
+| Основний сценарій: |  1. Користувач використав @startuml або ж @enduml.<br>2. Система ідентифікує даний текст окремим класом.<br>3. Система підсвічує даний текст певним кольором.<br>4. Користувач отримує певну підсвітку синтаксису.|
 
-**Діаграма V-INFO**
+**Сценарій підсвітки назви заголовку**
 
-![](https://www.plantuml.com/plantuml/img/RP2_JiD03CRtFCMdxhn01rI9CZ0n1DYTYwCS9ETY-wZozZX0GHNPJZx_lZy-c9DwdQU6aelYsLX1XchQ92ckCg5Tp7bUfxPO4p-ukLsVsEE9JjYzP3uZbq5q9izIG9rKnqdbbPFR3brrbzAiI92hm1xjA5iGVL2Ug9lu5zymR9aqZTkwZyCG3Unh0yuwN_Ft9MReoUd7i71YCzBbOdYH-zw_6pcz6I8c8cSQsI8qZi5tP7nj_V2lZV9xpShzNva3bpwk_Ga0)
-=======
-**Діаграма RG-1**
-
-![](https://i.imgur.com/GIetig9.jpg)
- 
-**Діаграма LG**
-
-![](https://www.plantuml.com/plantuml/img/NP0n3i8m34NtdC8SW0im82Ga9YGGY0C4noqMRbB5pj3RavGkxMRv_V_rxPEQprO6SHujPNXGpsgKARoKCdY5ejbXYfQJm7EgR6XRdTHL0ljZ6-40zqog8Add2EzYbg9heF8cQpmDeos2Zad29k328cky-F_u_27yrgnQYkDOR9r-dNqpBJ6qug0Z8NUCu15JYHl3RQJiZLC4hBs4Z09eGQn7T4LashaJnL3_udy0)
- 
-**Діаграма PRJ-V**
-
-![](https://i.imgur.com/Rkk1Kxc.jpg)
-
-**Діаграма N-PRJ**
-
-![](https://www.plantuml.com/plantuml/img/NL7DJiCm3BxtAQpTUO4TqAHnHeY1TdPJPmsaSMKxGtrxd29GooLAxC_VZtDIGx4wvGw3iS0htP8Q2GtlIWAeK5MwmCM4CrmMxqsjgejste67ntOzmXlES3WBeH4K-e9P-8E27Q2lPbmw1pMiZnpXGcM0o3Ar0wYuN2etc55m8dyeSDoIx8IkabmY5R2H82RAmtOGdTcQbISkz5zydJ-F53vrLGuiulJEahCRsCD-eZG-nVigEA0XzAZqvsiRwaNudWPo2zL69_UzMjKTv9ajnGMmvsgWDGJIM3E49fMujDGjr2_xoTVa7uFV)
-
-
-**Діаграма ADD-ARTF**
-
-![](https://www.plantuml.com/plantuml/img/RP2nJWGn34JxVCLeUtw00Xr2eaQwbiQNE5nG4gzYvz3-FSckG9n4DvePFpivgL6pNh8ZRzBm8jLQklIfIT6rEJyjoJXlQbocgvkwaU3XQSf7l3LMPSNo7086BiK1qmK3OrBTwCpgc9XLkQNmJpTAAtVGrvIp8bNObL6fCAW6sBOo9Excx_IUz3Kd2egOCklFpfqqDkcCXGA78uS9tW_qskIJlI6GqOMKxyuzN-Nhk9N_N0ljteydnvxpjg0CIH_iJbp3-4dw1W00)
-
-**Діаграма ED-ARTF**
-
-![](https://www.plantuml.com/plantuml/img/RP312W8n34Jl_OgmTt_0WmZYNTohbzXctKgtaIPLzkzDHT0LRqFoPYPaAuf5wvGSUkK2EyvQuhasZG9LYlDjn0dwMPIcDfLPd6rWjMbo3OT28YJGxKDKiBmuM9fqO3dAsHdKMBCqbkyn_8C7BjCYzWNuaONoXmFC0MxVXRyrB--HRWaz1HXYCZ3cKmOToPny9QyGKF6CGelR-f4Vxr1pVYgbUc-5Gqrfxc0oYHToMyh17eTF)
-
-
-**Діаграма ADD-CON**
-
-![](https://i.imgur.com/1YGuWXD.jpg)
-
-**Діаграма RM-CON**
-
-![](https://i.imgur.com/n4THAym.jpg)
-
-
-
-**Діаграма ADD-TSK**
-
-![](https://www.plantuml.com/plantuml/img/FSz12eCm40NGVKunTEy5N8XIUW9xWJ69RMYSAPaVfBUlMkbgu7_UX-aDN52NxDX32mqLp-sm4JklWgAPneyXBdjcZflEMhhpcov320IsruMc2gWuQpfkwLeY8nuDhKc2hYUw2UAsd3EbvQq5BA30uDtPtqbS3tkkZL42YIBDoJEI2l6a5MJL-sWsrqmSGf87wVnpplMRsJxw0W00)
-
-**Діаграма DEL-PRJ**
-
-![](https://i.imgur.com/1smaTFG.jpg) -->
-
+| Ідентифікатор: | TITLE |
+| --- | --- |
+| Назва: | Підсвітка заголовку. |
+| Участники: | Користувач; Система |
+| Передумови: | Користувач використав 'title' |
+| Результат: | Користувач отримує певну підсвітку синтаксису |
+| Виключні ситуації: | title знаходиться в середині коментаря, або ж є 'string' класом |
+| Основний сценарій: |  1. Користувач використав 'title'.<br>2. Система ідентифікує даний текст окремим класом.<br>3. Система підсвічує даний текст певним кольором.<br>4. Користувач отримує певну підсвітку синтаксису.|
 
 <a name="розробка"></a>
 ## Розробка
 
-<!-- ![](http://www.plantuml.com/plantuml/png/ZP1D2i8m48NtEKN8KbgmMrSLwa8GALeF4DeeqVoKP8hqzfB1gG5Tk4dUbvTvmqmTGGQOh67AWOQPjy7VLG_iVVCDtpSP7ALL6JOgza6FeBrZbD39-63fm5fIgP1qNhKyoS5efvQKIrI1fGDJIAKKqkSfk0ntfPNQ41tyJJk2LiRuz64WFddpQRGDeA-o1qO26nBHp3btyqZylGJQZQYAIl2ov69Th0GkPV7m2Rqg2HmrVVZ7G47DSI3y_CkibHicQru0)
+Розробка та створення власного хайлайтера починається з розуміння його завдання, структури та базового синтаксису.
+Для початку потрібно розуміти, що мова програмування, для якої ви будете створювати хайлайтер, складається з різних частин, кожна з яких буде мати власний синтаксичний аналіз - а відповідно і власне підсвічування. Такими частинами у більшості мов програмування виступають: 
+	* ключові слова
+	* коментари
+	* функції або ж процедури
+	* розділові знаки
+	* класи та типи об'єктів та безліч інших складових коду
 
+Але варто пам'ятати, що ті ж самі знайомі нам ключові слова `for` та `if`  не мають сенсу всередині рядкових форматів, які у свою чергу можуть містити зворотню косу риску `\`, що у багатьох мовах програмування вважається початком коментару, а коментарі зазвичай не містять нічого цікавого, окрім закінчення самого ж коментару.
 
+У Highlight.js такі частини називаються "режимами".
 
-![](http://www.plantuml.com/plantuml/png/XP91IyGm48Nl-HMX9vKjsBk75TQ38BBe-WE6PfHeCYt91Db_hsDi4xjblRtvNfZtscGR6G8dxnGIMpxgVHZUiMUL8lOGKL_SxourH3rQKzWZUCoK2jnXx8CTsGwKFQD-b-cRjfK5VsUgHpazLJX0_3Z9vzLyFfFFfl80ZRE4sN1A8YHMrbO3LRhcRkxs4Z6ST4khtH8L-9m2pJmMVjTwi2vZN_33y6OfKrVe7cBy78B9nbYCfy5XXa59GIajfQg1AXqhxIljAZrMEgZvysy3srTOUHwm-WlWpFM0ATxXE6A6hAO8oPQr2q2BUUcpKlExQhfDr-XlsbnlhfhyhYOl8_4w4J_tAWV-Dx8elq9EoE5LSujaadTV)
- -->
+Кожен режим підсвітки може складатися з:
+	* умови початку
+	* умови закінчення
+	* списку вміщених підрежимів
+	* правил, регулярних виразів та ключових слів
+	* інколи може містити деяку мову всередині іншої мови
+
+Надалі розглядатимемо загальну структуру хайлайтеру highlight.js та її найважливіші складові:
+```javascript
+{
+  case_insensitive: true, // чутливість до регістру
+  keywords: 'for if while',
+  contains: [
+    {
+      className: 'string',
+      begin: '"', end: '"'
+    },
+    hljs.COMMENT(
+      '/\\*', // умова початку
+      '\\*/', // умова кінця
+      {
+        contains: [
+          {
+            className: 'doc', begin: '@\\w+'
+          }
+        ]
+      }
+    )
+  ]
+}
+```
+### Ключові слова (Keywords)
+
+У загальному випадку ключове слово – це засіб мови програмування, який:
+	* вбудований в мову програмування
+	* використовується для розробки програми на цій мові
+Кожна з мов програмування має як спільні з іншими мовами, так і власні `keywords`. 
+
+Водночас, деякі мови мають різні типи "ключових слів", які з огляду синтаксичного аналізу хоч і не є однаковими, але є дуже близькими один до одного з точки зору підсвічування синтаксису. Це всілякі `literals`, `built-in`, `symbols` тощо. Щоб визначити такі групи ключових слів, ключові слова атрибутів стають об’єктом, кожна властивість якого визначає власну групу ключових слів:
+```javascript
+{
+  keywords: {
+    keyword: 'else for if while', //Перший спосіб задання списку ключових слів - перелік у лапках через пробіл 
+    literal: ['false','true','null'], //Другий спосіб - масивом.
+    _relevance_only: 'one two three four'
+  }
+}
+```
+
+### Генерація підсвітки
+
+Важливо розуміти, що яким кольором буде підсвічуватись текст, назви класів та їх графічні складові визначає `css` стиль, а не модуль підсвічування тексту для бібліотеки highlight.js, який ми створюємо. У цьому проекті не розглядається його створення, а для візуального тестування використовується вже існуючий - `monokai`. Плід наших зусиль являє собою деяку "підсказку", "вказування шляху та границь підсвічування", а не задання палітри підсвітки. 
+
+Режими хайлайтеру зазвичай генерують фактичну розмітку виділення - елементи `<span>` з певними іменами класів, які визначаються атрибутом `className`:
+```javascript
+{
+className:"symbol",
+begin: /\@startuml|\@enduml/,
+end: "\n"
+}
+```
+
+Надзвичайно важливим, я б навіть сказав життєво-необхідним у нашій роботі є знання регулярних виразів, їх розуміння та вміння вільно ними користуватися. Саме регулярними виразами ми будемо задавати умови початку та кінця підсвічування синтаксису.
+Чудовими сайтами для їх вивчення та тренування відповідно є: [MND Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) та [Regexr](https://regexr.com/)
+
+Давайте розглянемо регулярні вирази у наведеному вище прикладі:
+Завдання данного класу - виділення "@startuml" і "@enduml" унікальним чином. Така необхідність з'являється, оскільки жодна програма мовою `plantuml` не може обійтись без них, та саме вони є границями нашої програми.
+ `/\@startuml|\@enduml/` - умова початку. Задаючи умову початку у передніх косих рисах, ми говоримо, що весь синтаксис всередині умови має йти поспіль. Елемент `@` потрібно попередньо екранувати за допомогою бекслешу, бо інакше цей елемент не буде вважатись одним цілим з словами, що слідують за ним. Вертикальна ж риса `|` позначатиме логічну дію 'OR', тобто 'або'. 
+ Умовою кінця виступає новий рядок, що позначається спецсимволом `\n`.
+
+ Перекладаючи на людську мову, дана частина коду звучить як: "Якщо текст починається з '@startuml' або ж '@enduml', та закінчується новим рядком, то присвоїти тексту клас 'symbol'(і відповідну задану в css цьому класу підсвітку)."  
+
 <a name="тести"></a>
 ## Тестування
 
+Звичайно, кожна робота потребує належного тестування, інакше в реальному житті, неважливо чи це офіційне працевлаштування, чи курсова робота для університету, у вас її ніхто не прийме. 
+Для тестування хайлайтеру на початку доволі зручно використовувати веб-сторінку на локальному хості, до якої попередньо необхідно підключити ваш хайлайтер та бажаний css клас.
+Просто завантажте модуль після завантаження Highlight.js. Ви будете використовувати зменшену версію, знайдену в каталозі dist. Цей модуль - це просто побудова мови CDN, тому він зареєструється під час завантаження Javascript.
+Підключення highlight.js та вашого хайлайтеру:
+```html
+<script type="text/javascript" src="/path/to/highlight.min.js"></script>
+<script type="text/javascript" src="/path/to/plantuml.min.js"></script>
+<script type="text/javascript">
+  hljs.highlightAll();
+</script>
+```
+Підключення css стилю:
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/monokai-sublime.min.css">
+```
+
+Плюсом такого тестуванню є суб'єктивна оцінка роботи вашого модуля підсвітки у режимі реального часу, та легкість його створення. Мною під час розробки проекту використано веб-сторінку з даним кодом:
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/styles/monokai-sublime.min.css">
+	<title>Test</title>
+</head>
+<body>
+
+	<pre>
+		<code class="plantuml">
+			@startuml
+			title Simple communication\nexample
+			hujiyama sjdajyh SLKDks sd
+			skinparam monochrome true
+			/'user is not an actor'/
+			actor User
+			participant "First Class" as A
+			participant "Second Class" as B
+			participant "Last Class" as C
+			A = 123
+			User -> A: DoWork
+			activate A
+			AliceBlue
+			A -> B: Create Request
+			activate B
+
+			B -> C: DoWork
+			activate C
+			C --> B: WorkDone
+			destroy C
+
+			B --> A: Request Created
+			deactivate B
+
+			A --> User: Done
+			deactivate A
+			@lmao
+			@enduml
+		</code>
+	</pre>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.6.0/highlight.min.js"></script>
+	<script type="text/javascript" src="C:\Users\neoke\OneDrive\Рабочий стол\plantuml\ffff.min.js"></script>
+	<script type="text/javascript">hljs.highlightAll();</script>
+
+
+</body>
+</html>
+```
+
+Для відображення результату роботи модуля підсвітки достатньо запустити дану сторінку:
+![alt text](testrun.png)
+
+Звичайно, назвати якісним таке тестування неможливо, тож для більш конструктивного та доречного користування мною було використано стандартні для бібліотеки highlight.js тести, попередньо змінені для їх правильної роботи.
+Для такого тестування попередньо необхідно завантажити `Node.js` на вашу комп'ютерну систему. Перевірити ж чи завантажений Node.js та npm можливо у консолі за допомогою команд: 
+```
+node -v
+npm -v
+```
+Важливо зазначити, що стандартне тестування модулів бібліотеки highlight.js відбувається за допомогою [Mocha test](https://mochajs.org/). Тестування починається з завантаження до вашого каталогу проекту `npm` відповідною командою:
+```
+npm i
+```
+Надалі необхідно побудувати середовище тестування:
+```
+node tools/build.js -n plantuml -t node
+```
+У результаті отримаємо щось, схоже на це: 
+![alt text](build.png)
+
+Залишилось тільки запустити тестування командою:
+```
+npm test
+```
+
+Результат проходження тестів буде відображено відповідно заданій черзі:
+![alt text](test.png)
 <a name="висновки"></a>
 ## Висновки
 
