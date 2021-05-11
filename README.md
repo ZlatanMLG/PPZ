@@ -1,14 +1,14 @@
 ![logo](logo.png)![logo](man.png)![logo](man.png)![logo](man.png)
 
-# plantuml - a language grammar for highlight.js
+# plantuml - хайлайтер мови для highlight.js
 ![version](https://badgen.net/badge/version/0.1.1/green)
-## Usage
+## Використання
 
-Simply include the Highlight.js library in your webpage.
+Просто додайте бібліотеку Highlight.js до вашої веб-сторінки.
 
-### Static website or simple usage
+### Статична веб-сторінка або ж просте використання
 
-Simply load the module after loading Highlight.js.  You'll use the minified version found in the `dist` directory.  This module is just a CDN build of the language, so it will register itself as the Javascript is loaded.
+Просто завантажте модуль після завантаження Highlight.js. Ви будете використовувати зменшену версію, знайдену в каталозі dist. Цей модуль - це просто побудова мови CDN, тому він зареєструється під час завантаження Javascript.
 
 ```html
 <script type="text/javascript" src="/path/to/highlight.min.js"></script>
@@ -18,16 +18,16 @@ Simply load the module after loading Highlight.js.  You'll use the minified vers
 </script>
 ```
 
-## Example
-Here you can see how highlightjs-plantuml works:
+## Приклад
+Тут ви можете побачити, як працює highlightjs-plantuml :
 
 ![image of example](example.png)
 
-## License
+## Ліцензія
 
-Highlight.js is released under the MIT License. See [LICENSE](https://github.com/ZlatanMLG/highlightjs-plantuml/blob/main/LICENSE) file
-for details.
+highlightjs-plantuml випущений під ліцензією MIT. Дивіться [LICENSE](https://github.com/ZlatanMLG/highlightjs-plantuml/blob/main/LICENSE) файл
+задля деталей.
 
-### Author
+### Автор
 
-Valentyn Zhelepa <neokek1@gmail.com>
+Валентин Желепа <neokek1@gmail.com>
