@@ -1,6 +1,6 @@
 ![logo](logo.png)![logo](man.png)![logo](man.png)![logo](man.png)
 
-# plantuml - хайлайтер мови для highlight.js
+# plantuml - модуль підсвічування синтаксису для highlight.js
 ![version](https://badgen.net/badge/version/0.1.1/green)
 ## Використання
 
